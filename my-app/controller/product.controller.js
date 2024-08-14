@@ -38,7 +38,7 @@ export const getSingleProducts = async (req, res) => {
     try {
         const { name, category } = req.query;
         let query = "SELECT * FROM Products WHERE Product_id = $1"
-        const values = [id] // Parametrlarni boshlang'ich qiymatlar bilan aniqlang
+        const values = [id] 
 
         if (name) {
             query += " AND name ILIKE $2"
@@ -46,7 +46,7 @@ export const getSingleProducts = async (req, res) => {
         }
 
         if (category) {
-            query += " AND category_id = $3"// Sizning misolda category_id foydalanish mumkin
+            query += " AND category_id = $3"
             values.push(category)
         }
 
@@ -58,7 +58,7 @@ export const getSingleProducts = async (req, res) => {
 
         res.status(200).send({ data: result.rows[0] })
     } catch (err) {
-        console.error(err); // Xatolikni log qilish
+        console.error(err);
         res.status(500).send({ message: err.message })
     }
 }
