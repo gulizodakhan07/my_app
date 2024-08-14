@@ -1,0 +1,104 @@
+Categorylar uchun crud:
+GET => http://localhost:9000/categories/all/category-with-products
+
+POST => http://localhost:9000/categories/add/category                   Example:
+                                                                        {
+
+	                                                                        "Category_name": "sumkalar"
+                                                                       }
+PUT => http://localhost:9000/categories/update/category/4              eXAMPLE:
+                                                                        {
+	                                                                        "Category_name": "Romollar"
+                                                                        }
+DELETE => http://localhost:9000/categories/delete/category/8
+
+
+
+
+
+
+
+
+contract uchun crud:
+GET => http://localhost:9000/contracts/add/contractRoutes
+POST =>  http://localhost:9000/contracts/add/contracts                             Example:
+                                                                                            {
+                                                                                                "order_id": 2,
+                                                                                                "credit_amount": 1000.00,
+                                                                                                "interest_rate": 26,
+                                                                                                "installments": 5,
+                                                                                                "due_date": "2024-12-31"
+                                                                                            }
+PUT => http://localhost:9000/contracts/update/contract/5                           Example:
+                                                                                            {
+                                                                                                "payment_amount": 500
+                                                                                            }
+ORderItems crudi:
+GET =>  http://localhost:9000/orderItem/by-id/2
+
+POST => http://localhost:9000/orderItem/update/order-item                           Example:
+                                                                                        {
+                                                                                            "order_id": 1,
+                                                                                            "product_name": "cosmetics",
+                                                                                            "quentity": 10
+                                                                                        }
+
+Orders crudi:
+GET => http://localhost:9000/orders/all/order
+POST => http://localhost:9000/orders/create                                         Example:
+                                                                                        {
+                                                                                            "password": "gulzodakhan,
+                                                                                            "product_name": "cosmetics"
+                                                                                        }
+
+
+
+
+
+Payment crudi:
+Post => http://localhost:9000/payment/add/payment
+GET => http://localhost:9000/payment/all/payment
+GET => http://localhost:9000/payment/id/1       (get payment by id)
+GET => http://localhost:9000/payment//by-order-id/1 (get payment by order id)
+
+
+
+
+
+Product crudi:
+POST => http://localhost:9000/products/add/product
+GET => http://localhost:9000/products/single/product/3         (get single product)
+GET => http://localhost:9000/products/all  (get all products)
+PUT => http://localhost:9000/products/update/1 
+DELETE => http://localhost:9000/products/delete/id/3
+
+
+User crudi:
+POST => http://localhost:9000/users/add/user                                   Example:
+                                                                                        {
+                                                                                            "Username": "Gulzoda",
+                                                                                            "Email": "abdullajonovagulzoda@gmail.com",
+                                                                                            "Password": "gulzodakhan"
+                                                                                        }
+
+GET => http://localhost:9000/users/all
+GET => http://localhost:9000/users/by/id/9  (get user by id)
+
+PUT => http://localhost:9000/users/update/id/9                                   Example:
+                                                                                        {
+                                                                                            "Username": "Gulizoda",
+                                                                                            "Email": "abdullajonovas@gmail.com",
+                                                                                            "Password": "gulzodakhan"
+                                                                                        }
+DELETE => http://localhost:9000/users/delete/id/9                                                                                        
+
+
+
+
+
+
+
+
+
+
+

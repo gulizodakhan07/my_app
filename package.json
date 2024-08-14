@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon my-app/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "formidable": "^3.5.1",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "pg": "^8.12.0"
+  }
+}
